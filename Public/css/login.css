@@ -1,0 +1,61 @@
+#modal-login #OR {
+    height: 30px;
+    width: 30px;
+    border: 1px solid #C2C2C2;
+    border-radius: 50%;
+    font-weight: bold;
+    line-height: 28px;
+    text-align: center;
+    font-size: 12px;
+    float: right;
+    position: absolute;
+    right: -16px;
+    top: 44%;
+    z-index: 1;
+    background: #9a0e14;
+    color: #fff;
+}
+
+.--color-white {
+	color: #fff;
+}
+
+.--color-red {
+	color: #911719;
+}
+
+.--color-blue {
+	color: #33629c;
+}
+
+.--color-grey {
+	color: #9b9b9b;
+}
+
+.--bg-blue {
+	background: #33629c;
+}
+
+#modal-login .modal-content {
+	border-radius: 6px !important;
+}
+
+#modal-login .form-control:focus {   
+    border-color: rgba(229, 103, 23, 0.8);
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(229, 103, 23, 0.6);
+    outline: 0 none;
+}
+
+#modal-login select {
+	font-weight: bold;
+}
+
+.nav-tabs .active{
+	color: #911719 !important;
+	font-weight: bold;
+}
+
+.nav-tabs .nav-link:hover {
+	color: #911719 !important;
+	font-weight: bold;
+}

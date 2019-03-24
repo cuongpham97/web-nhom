@@ -1,0 +1,28 @@
+Options -Indexes
+RewriteEngine On
+
+#Admin
+
+RewriteRule ^admin$ index.php?prefix=admin&url=Dashboard/index [L,NC]
+
+RewriteRule ^admin/login$ index.php?prefix=admin&url=Accounts/login [L,NC]
+
+RewriteRule ^admin/([\w-]+)$ index.php?prefix=admin&url=$1/index [L,NC]
+
+RewriteRule ^admin/([\w-]+)/([\w-]+)$ index.php?prefix=admin&url=$1/$2 [L,NC]
+
+RewriteRule ^admin/([\w-]+)/([\w-]+)/(\d+)$ index.php?prefix=admin&url=$1/$2/$3 [L,NC]
+
+#Website
+
+RewriteRule ^$  index.php?prefix=Website&url=Home/index [L,NC]
+
+RewriteRule ^courses/(?:[^\/]*)-(\d+)$ index.php?prefix=Website&url=Directories/index/$1 [L,NC]
+
+RewriteRule ^lectures/(?:[^\/]+)/(?:[^\/]*)-(\d+)$ index.php?prefix=Website&url=Lectures/index/$1 [L,NC]
+
+RewriteRule ^([\w-]+)$ index.php?prefix=Website&url=$1/index [L,NC]
+
+RewriteRule ^([\w-]+)/([\w-]+)$ index.php?prefix=Website&url=$1/$2 [L,NC]
+
+RewriteRule ^([\w-]+)/([\w-]+)/(?:[\w-]*)-(\d+)$ index.php?prefix=Website&url=$1/$2/$3 [L,NC]

@@ -1,0 +1,231 @@
+@charset: "utf-8";
+
+body{
+	background: #EDEDED;
+}
+
+/*----------------------------------------------------------------------------------*/
+.pagetop-content {
+	background: url('../img/background-pagetop.jpg') 0 0 no-repeat;
+	margin: 0;
+	font-size: 15px;
+	background-attachment:cover;
+	background-size:110% 100%;
+}
+
+.pagetop-content .wrap {
+	font-family: "Avo";
+	padding: 80px 0px;
+	font-size: 2em;
+}
+
+.pagetop-content hr {
+	height: 2px;
+	margin: 14px auto;
+	width: 60vw;	
+	max-width: 400px;
+}
+.pagetop-content .para-1 p {
+	margin-bottom: 8px;
+	line-height: 28px;
+}
+
+.pagetop-content .para-2 p {
+	color: #9a0e14;
+	font-weight: bold;
+	margin: 0;
+	line-height: 28px;
+}
+
+.pagetop-content .para-3 {
+	width: 200px;
+	height: 40px;
+	margin: 10px auto;
+}
+
+@media screen and (max-width: 575px) {
+	.pagetop-content {
+		background: #FFF;
+		font-size: 8px;
+	}
+	
+	.pagetop-content .wrap {
+		padding: 50px 10px;
+	}
+}
+
+@media screen and (min-width: 576px) and  (max-width: 767px) {
+	.pagetop-content {
+		background: #FFF;
+		font-size: 12px;
+	}
+
+	.pagetop-content .wrap {
+		padding: 50px 10px;
+	}
+}
+/*----------------------------------------------------------------------------------*/
+.courses {
+	justify-content: center;
+	margin: 40px auto;
+	max-width:1200px;
+}
+
+.course {
+	width: 355px;
+	height: 240px;
+	margin: 10px;
+}
+
+.course img {
+	width: 150px;
+	height: 120px;
+	margin-top: 35px;
+	background: #fff;
+	border-radius: 5px;
+    padding: 10px;
+    border: 5px solid #ddd;
+}
+
+.course img:hover {
+	transform: rotate(15deg);
+}
+
+.course h5 {
+	font-family: 'Avo';
+	color: #fff;
+	font-size: 14px;
+	line-height: 17.3px;
+	padding: 12px 0;
+	margin: 10px 0;
+}
+.courses div:nth-child(even) {
+	background: #686868;
+}
+
+.courses div:nth-child(even) img:hover {
+	box-shadow: 0 0 5px 5px #0ff;
+}
+
+.courses div:nth-child(odd) {
+	background: #911719;
+}
+
+.courses div:nth-child(odd) img:hover {
+	box-shadow: 0 0 5px 5px #fff900;
+}
+
+@media screen and (max-width: 767.99px) {
+
+	.course {
+		width: 180px;
+		height: 200px;
+	}
+
+	.course img {
+		width: 80px;
+		height: 60px;
+	}
+}
+
+@media screen and (max-width: 416.99px) {
+	.course {
+		width: 112px;
+		height: 150px;
+	}
+
+	.course img {
+		padding: 0;
+		width: 60px;
+		height: 50px;
+	}
+
+	.course h5 {
+		font-size: 11.5px;
+	}
+}
+
+/*----------------------------------------------------------------------------------*/
+.bottom-content {
+	background: url('../img/background-bottom.jpg') center center no-repeat fixed;
+	background-size: 300% 300%;
+	opacity: 0.96;
+	font-family: 'Avo';
+	margin: 0 15px;
+	padding: 100px 20px;
+	padding-bottom: 80px;
+
+}
+
+.bottom-content p {
+	margin-bottom: 20px;
+	margin-top: 10px;
+	line-height: 41px;
+    font-size: 28.8px;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+.bottom-content .search-box input{
+	margin: 0 auto;
+	display: block;
+    margin-top: 35px;
+    width: 80%;
+    height: 35px;
+    font-size: 17.3px;
+    padding: 0 20px;
+}
+
+.contact {
+	width: 100%;
+	margin-top: 40px;
+	list-style-type: none;
+	padding: 0;
+}
+
+.contact li {
+	display: inline-block;
+	border-radius: 100%;
+	padding: 10px;
+	width: 48px;
+	margin: 0 15px;
+}
+
+.contact li:hover {
+	background: #911719;
+}
+
+.contact li i {
+	font-size: 28.8px;
+	line-height: 28.8px;
+	color: white;
+}
+
+@media screen and (max-width: 767.99px) {
+	.bottom-content {
+		/*background: url('../img/mobile-background-bottom.jpg') center center no-repeat fixed;*/
+		padding: 30px 15px;
+		margin: 0;
+		background-size: 600% 300%;
+	}
+
+	.bottom-content p {
+		font-size: 14px;
+		margin-bottom: 20px;
+		line-height: 22px;
+	}
+
+	.contact {
+		margin: 5px;
+	}
+
+	.contact li i {
+		font-size: 20px;
+	}
+
+	.contact li {
+		width: 38px;
+		margin: 0px;
+	}
+}

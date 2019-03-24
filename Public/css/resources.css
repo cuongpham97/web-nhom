@@ -1,0 +1,150 @@
+body{
+	background: #EDEDED;
+}
+
+.pagetop-content {
+	background: url('../img/banner.png')  0 -90px no-repeat;
+	font-size: 15px;
+	margin: 0;
+	background:cover;
+	background-size:100% 120%;
+}
+
+.pagetop-content .wrap {
+	font-family: "Avo";
+	padding: 80px 0px;
+	
+}
+
+.pagetop-content hr {
+	width: 60vw;	
+	max-width: 250px;
+	background: #9a0e14;
+	height: 3px;
+
+	
+}
+.pagetop-content .para-1  {
+
+	line-height: 55px;
+	font-size: 55px;
+	color: white;
+	text-align: left;
+	
+}
+
+.pagetop-content .para-2  {
+	margin: 0;
+	line-height: 28px;
+	font-size: 22px;
+	color: white;
+	text-align: left;
+	padding: 50px;
+}
+
+
+.banner{
+	width: 100%;
+	height: 74vh;
+	min-height: 380px;
+	max-height: 440px;
+	font-size: 16px;
+	background: url(../img/banner.png) no-repeat;
+	background-size: 100% 120%;
+}
+
+.banner h1 {
+	color: white;
+	font-family: "Avo";
+	font-size: 3.4em;
+}
+
+.banner hr {
+	height: 5px;
+	background: #9a0e14;
+	margin: 25px 0; 
+}
+
+.banner p {
+	font-size: 1.3em;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI";
+    color: white;
+}
+
+@media screen and (max-width: 767px) {
+	.banner {
+		font-size: 12px;
+		background: url("../img/mobile-banner.png") no-repeat;
+		background-size: 100% 100%;
+		height: auto;
+		max-height: 1000px;
+	}
+	
+	.banner hr {
+		margin: 25px auto;
+		width: 50%;
+	}
+
+	.banner .inside{
+		padding: 40px 0;
+		margin: 40px auto;
+		max-width: 500px;
+		text-align: center;
+		background-color: #000;
+		border-radius: 10px;
+		opacity: .8;
+	}
+}
+
+
+.content {
+	margin: 30px auto;
+	font-size: 22px;
+	counter-reset: count;
+}
+
+.content h4 {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+	font-size: 1em;
+}
+
+.content h3 {
+	width: 100%;
+	font-size: 1.2em;
+	font-style: normal;
+	color: #a52a2a;
+	margin-top: 25px;
+}
+
+.content h3::before {
+	counter-increment: count;
+	content: counter(count) ". ";
+}
+
+.table {
+	width: 60%;
+	margin: 5px auto;
+}
+
+.table td{
+	padding: 6px;
+}
+
+.table tr td:first-child:before{
+	content: url(../img/snow-star.gif) "\00a0\00a0\00a0";
+}
+
+.table tr td:last-child{
+	text-align: center;
+}
+
+.table tr td:last-child a:hover{
+	color: #f00;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+	.table {
+		width: 100%;
+	}
+}

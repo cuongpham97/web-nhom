@@ -1,0 +1,134 @@
+body {
+	background-color: #ededed;
+	counter-reset: nLession;
+}
+
+.lession {
+	font-family: "Source Sans Pro";
+	font-size: 16px;
+}
+
+.wrap {
+	border-left: dashed #00800045 1px;
+	margin-left: 100px;
+	padding: 20px 0 20px 30px; 
+}
+
+.lession h1::before {
+	counter-increment:  nLession;
+	content: "Phần " counter(nLession) " - ";
+}
+
+.lession h1 {
+	font-size: 1.75em;
+	font-weight: bold;
+	color: green;
+	margin: 20px 0 10px 0;
+}
+
+.lession h4 {
+	font-weight: bold;
+	font-size: 1.35em;
+}
+
+.lession ol {
+	margin: 20px 0 20px 60px;
+}
+
+.lession ul {
+	margin: 20px 0 20px 60px;
+}
+
+.lession ol li {
+	font-size: 1.44em;
+	line-height: 30px;
+	color: #50505e;
+}
+
+.lession ul li{
+	border-radius: 5px 0 0 5px;
+	border-left: solid red 3px;
+	margin-bottom: 10px;
+	padding: 5px;
+	padding-left: 20px;
+	box-shadow: 0 0 5px rgba(0, 40, 50, 0.5);
+	width: 100%;
+}
+
+
+.lession ul li a {
+	font-size: 1.44em;
+	line-height: 40px;
+	text-decoration: none;
+	color: #9a0e14;
+	font-weight: bold;
+}
+
+.lession ul li:hover{
+	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 767px) {
+	.lession {
+		font-size: 14px;
+	}
+
+	.lession .wrap {
+		border-left: none;
+		margin-left: 5%;
+		padding: 0;
+	}
+
+	.lession ol {
+		margin-left: 0;
+		padding-left: 30px;
+	}
+
+	.lession ul {
+		margin-left: 0;
+		padding-left: 10px;
+	}
+}
+
+.my-btn {
+	display: inline-block;
+	font-size: 14px!important;
+	color: blue!important;
+	margin-left: 10px;
+	background: none;
+	border: none;
+	margin-left: 8px;
+	cursor: pointer;
+}
+
+.directory:hover {
+	cursor: pointer;
+}
+
+.directory:focus {
+	border: 1px solid green!important;
+	box-shadow: none;
+}
+
+.goal:hover {
+	cursor: pointer;
+}
+
+.goal:focus {
+	border: 1px solid green!important;
+	box-shadow: none;
+}
+
+.btn-lecture:hover{
+	color: #9a0e14!important;
+}
+
+.--color-green {
+	color: green!important;
+}
+
+.--color-red {
+	color: red!important;
+}
